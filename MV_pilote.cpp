@@ -3,9 +3,8 @@
 #include <vector>
 #include <memory>
 
-using namespace std; // Directive pour simplifier l'utilisation des éléments de std
+using namespace std;
 
-// Classe pour gérer la base de données des offres de réservation (BDOR)
 class BDOR {
 private:
     struct Entree {
@@ -26,7 +25,6 @@ public:
     }
 };
 
-// Classe pour gérer une réservation
 class Reservation {
 public:
     string description;
@@ -34,7 +32,6 @@ public:
     explicit Reservation(const string& desc) : description(desc) {}
 };
 
-// Classe pour gérer une journée
 class Journee {
 private:
     vector<shared_ptr<Reservation>> reservations;
@@ -46,7 +43,6 @@ public:
     }
 };
 
-// Classe pour gérer un segment
 class Segment {
 private:
     string nom;
@@ -63,7 +59,6 @@ public:
     const string& getNom() const { return nom; }
 };
 
-// Classe pour gérer un voyage
 class Voyage {
 private:
     string nom;
