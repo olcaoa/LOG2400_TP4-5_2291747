@@ -1,0 +1,3 @@
+﻿  MV_pilote.cpp
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\alons\OneDrive\Documents\POLY\2400\LOG2400_TP4-5_2291747\x64\Debug\2400 TP4.exe : fatal error LNK1120: 1 unresolved externals
