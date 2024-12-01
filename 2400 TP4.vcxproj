@@ -119,7 +119,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MV_pilote.cpp" />
+    <ClCompile Include="AbstractReservationComposite.cpp" />
+    <ClCompile Include="MV_pilote.cppNot" />
+    <ClCompile Include="Segment.cpp" />
+    <ClCompile Include="Voyage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LOG2400-A2024-TP4-Enonce.pdf" />
+    <None Include="MV_offres_de_reservation.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractReservation.h" />
+    <ClInclude Include="AbstractReservationComposite.h" />
+    <ClInclude Include="Journee.h" />
+    <ClInclude Include="Reservation.h" />
+    <ClInclude Include="Segment.h" />
+    <ClInclude Include="Voyage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

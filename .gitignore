@@ -30,3 +30,23 @@
 *.exe
 *.out
 *.app
+.vs/2400 TP4/v17/ipch/AutoPCH/f8d0dc5335366272/RESERVATION.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/d25ca79fb7b3df40/JOURNEE.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/bec2270141d1ee6c/SEGMENT.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/a2da57ddaed0b618/ABSTRACTRESERVATION.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/50a9f45aa97ae6/ABSTRACTRESERVATIONCOMPOSITE.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/37a4a76be20b72a8/MV_PILOTE.ipch
+.vs/2400 TP4/v17/ipch/AutoPCH/36a75a636c4f3d94/VOYAGE.ipch
+.vs/2400 TP4/v17/DocumentLayout.json
+.vs/2400 TP4/v17/DocumentLayout.backup.json
+.vs/2400 TP4/v17/Browse.VC.db
+.vs/2400 TP4/v17/.suo
+.vs/2400 TP4/FileContentIndex/f767ba60-d0d4-409b-b98c-75570bb87970.vsidx
+.vs/2400 TP4/FileContentIndex/9187de48-2089-46c6-8222-b0592a1d79db.vsidx
+.vs/2400 TP4/FileContentIndex/5a346505-f487-456f-8602-940a45cb822b.vsidx
+.vs/2400 TP4/FileContentIndex/4b821ebf-5a55-42ef-9775-b5f247ef4a78.vsidx
+.vs/2400 TP4/FileContentIndex/2396508a-6ad4-4269-ae17-2390fc49ab5b.vsidx
+.vs/2400 TP4/FileContentIndex/2298b910-9f38-4b97-baf1-2d5eaf88f0d1.vsidx
+.vs/2400 TP4/FileContentIndex/1539a045-23b2-4fee-b17e-b48f63956dea.vsidx
+.vs/2400 TP4/FileContentIndex/13afbb87-68f6-44f0-9c71-363ae846d93b.vsidx
+~$MV_offres_de_reservation.xlsx
