@@ -89,7 +89,15 @@ public:
         cout << copie.nom << " copie a partir du " << nom << "!\n";
         return copie;
     }
+
+    friend ostream& operator<<(ostream& stream, const Voyage& voyage);
+
 };
+
+ostream& operator<<(ostream& stream, const Voyage& voyage) {
+    stream << voyage.nom;
+    return stream;
+}
 
 int main() {
     // Étape 1 : Création de la BDOR

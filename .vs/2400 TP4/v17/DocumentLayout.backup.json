@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alons\\OneDrive\\Documents\\POLY\\2400\\LOG2400_TP4-5_2291747\\",
+  "WorkspaceRootPath": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\OneDrive\\Documents\\POLY\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:MV_pilote.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -56,11 +56,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MV_pilote.cpp",
-              "DocumentMoniker": "C:\\Users\\alons\\OneDrive\\Documents\\POLY\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp",
               "RelativeDocumentMoniker": "MV_pilote.cpp",
-              "ToolTip": "C:\\Users\\alons\\OneDrive\\Documents\\POLY\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp*",
-              "RelativeToolTip": "MV_pilote.cpp*",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\MV_pilote.cpp",
+              "RelativeToolTip": "MV_pilote.cpp",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwDcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-01T16:14:49.567Z",
               "EditorCaption": ""
