@@ -28,7 +28,7 @@ std::string Journee::getDate() const {
     return oss.str();
 }
 
-std::string Journee::imprimer()
-{
-    return "Date: " + getDate() + "\nReservations :\n" + imprimerEnfants();
+void Journee::accept(VisiteurImprimeur& visiteur) {
+    visiteur.visit(*this);
+    ReservationComposite::accept(visiteur); // Enfants
 }
