@@ -1,5 +1,5 @@
 #pragma once
-#include "AbstractReservationComposite.h"
+#include "AbstractReservation.h"
 
 class Reservation : public AbstractReservation
 {

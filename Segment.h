@@ -1,5 +1,5 @@
 #pragma once
-#include "AbstractReservationComposite.h"
+#include "ReservationComposite.h"
 
 class Segment : public ReservationComposite
 {

@@ -21,7 +21,7 @@
     <ClCompile Include="Voyage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AbstractReservationComposite.cpp">
+    <ClCompile Include="ReservationComposite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Reservation.cpp">
@@ -37,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImprimeurReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -64,7 +67,10 @@
     <ClInclude Include="Voyage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractReservationComposite.h">
+    <ClInclude Include="ReservationComposite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImprimeurReservation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
