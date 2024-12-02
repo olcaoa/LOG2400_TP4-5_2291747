@@ -5,7 +5,7 @@
 #include "Voyage.h"
 #include <iostream>
 
-void ImprimeurReservation::visit(AbstractReservation& reservation) {
+void ImprimeurReservation::visit(Reservation& reservation) {
     std::cout << "Reservation:\nNom: " << reservation._nom 
               << "\nDescription: " << reservation._description
               << "\nPrix: " << reservation._prix << "$\n";
@@ -20,14 +20,14 @@ void ImprimeurReservation::visit(Journee& journee) {
 
 void ImprimeurReservation::visit(Segment& segment) {
     std::cout << "Segment contenant les journées suivantes:\n";
-    for (auto* journee : segment.obtenirJournees()) {
+    for (auto* journee : segment.obtenirReservations()) {
         journee->accept(*this);
     }
 }
 
 void ImprimeurReservation::visit(Voyage& voyage) {
     std::cout << "Voyage contenant les segments suivants:\n";
-    for (auto* segment : voyage.obtenirSegments()) {
+    for (auto* segment : voyage.obtenirReservations()) {
         segment->accept(*this);
     }
 }
