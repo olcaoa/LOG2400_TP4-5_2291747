@@ -16,10 +16,13 @@ int main() {
 	Voyage firstVoyage;
 	firstVoyage.ajouterReservation(&firstSeg);
 
+	ImprimeurReservation imprimeur;
+    firstVoyage.accept(imprimeur);
+
 	// cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
 	// cout << "day:" << endl << firstDay << "prix: " << (int)firstDay.getPrix() << "$$" << endl;
 	// cout << "seg:" << endl << firstSeg << "prix: " << (int)firstSeg.getPrix() << "$$" << endl;
-	cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
+	// cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
 
 	return 0;
 }

@@ -2,16 +2,11 @@
 #include <sstream>
 
 
-std::string Segment::imprimer()
-{
-    return "A implementer \n" + imprimerEnfants();
-}
-
 Segment::Segment() : ReservationComposite() {}
 
 void Segment::ajouterJournee(Journee* journee) {
     _journees.push_back(journee);
-    ajouterReservation(journee); // Ajoute également à la hiérarchie de `ReservationComposite`
+    ajouterReservation(journee);
 }
 
 void Segment::enleverJournee(Journee* journee) {
@@ -24,4 +19,9 @@ void Segment::enleverJournee(Journee* journee) {
 
 const std::vector<Journee*>& Segment::obtenirJournees() const {
     return _journees;
+}
+
+void Segment::accept(VisiteurImprimeur& visiteur) {
+    visiteur.visit(*this);
+    ReservationComposite::accept(visiteur);
 }

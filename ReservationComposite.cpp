@@ -32,12 +32,16 @@ std::vector<AbstractReservation*>& ReservationComposite::obtenirReservations()
 	return _reservations;
 }
 
-std::string ReservationComposite::imprimerEnfants()
-{
-	string out = "";
-	for (AbstractReservation* reserv : _reservations) {
-		out += imprimeur.imprimer(*reserv);
-		cout << imprimeur.imprimer(*reserv) << endl;
-	}
-	return out;
+std::string ReservationComposite::imprimerEnfants(VisiteurImprimeur& visiteur) {
+    string out;
+    for (AbstractReservation* reserv : _reservations) {
+        reserv->accept(visiteur);
+    }
+    return out;
+}
+
+void ReservationComposite::accept(VisiteurImprimeur& visiteur) {
+    for (AbstractReservation* reservation : _reservations) {
+        reservation->accept(visiteur);
+    }
 }

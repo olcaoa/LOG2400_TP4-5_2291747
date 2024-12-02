@@ -1,10 +1,5 @@
 #include "Voyage.h"
 
-std::string Voyage::imprimer()
-{
-    return "A implementer \n" + imprimerEnfants();
-}
-
 Voyage::Voyage() : ReservationComposite() {}
 
 void Voyage::ajouterSegment(Segment* segment) {
@@ -24,3 +19,7 @@ const std::vector<Segment*>& Voyage::obtenirSegments() const {
     return _segments;
 }
 
+void Voyage::accept(VisiteurImprimeur& visiteur) {
+    visiteur.visit(*this);
+    ReservationComposite::accept(visiteur);
+}

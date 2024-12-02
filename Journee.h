@@ -9,8 +9,7 @@ private:
     int _mois;
     int _jour;
     int _annee;
-protected:
-    std::string imprimer() override;
+
 public:
 	Journee();
 
@@ -19,4 +18,5 @@ public:
     int getJour() const;
     int getAnnee() const;
     std::string getDate() const;
+    void accept(VisiteurImprimeur& visiteur) override;
 };

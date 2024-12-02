@@ -8,11 +8,12 @@ private:
 protected:
 	std::vector<AbstractReservation*> _reservations;
 	double calculerPrix();
-	virtual std::string imprimerEnfants();
+	virtual std::string imprimerEnfants(VisiteurImprimeur& visiteur);
 public:
 	const virtual double& getPrix() override;
 	void ajouterReservation(AbstractReservation* r);
 	void enleverReservation(AbstractReservation* r);
 	std::vector<AbstractReservation*>& obtenirReservations();
+	void accept(VisiteurImprimeur& visiteur) override;
 };
 
