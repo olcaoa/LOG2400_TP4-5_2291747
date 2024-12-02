@@ -10,10 +10,7 @@ class LecteurFichier
 // private:
 public:
 	LecteurFichier();
-	std::map<std::string, std::map<std::string, std::vector<std::string>>*> _donneesParCategorie;
-	std::map<std::string, std::vector<std::string>*>* _donneesVols;
-	std::map<std::string, std::vector<std::string>*>* _donneesHebergement;
-	std::map<std::string, std::vector<std::string>*>* _donneesExcursions;
+	std::map<std::string, std::map<std::string, std::vector<std::string>>> _donneesParCategorie;
 	std::vector<std::string>& obtenirDonnees(std::string categorie, std::string typeDonnee);
 };
 

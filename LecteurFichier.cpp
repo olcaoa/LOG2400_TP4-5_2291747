@@ -1,7 +1,10 @@
 #include "LecteurFichier.h"
 #include <fstream>
+#include <iostream>
 
-std::map<std::string, std::vector<std::string>>& lireCSV(std::string cheminFichier) {
+const std::string chemin = "MV_offres_de_reservation_";
+
+std::map<std::string, std::vector<std::string>> lireCSV(std::string cheminFichier) {
 	using namespace std;
 	map<string, vector<string>> mapDeRetour;
 	vector<string> cles;
@@ -24,5 +27,17 @@ std::map<std::string, std::vector<std::string>>& lireCSV(std::string cheminFichi
 }
 
 LecteurFichier::LecteurFichier() {
+	using namespace std;
+	map<string, vector<string>> vols = lireCSV(chemin + "Vols.csv");
+	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergements.csv");
+	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions");
+	_donneesParCategorie["Vols"] = vols;
+	_donneesParCategorie["Hebergements"] = hebergement;
+	_donneesParCategorie["Excursions"] = excursion;
+}
+
+std::vector<std::string>& LecteurFichier::obtenirDonnees(std::string categorie, std::string typeDonnee)
+{
+	return _donneesParCategorie[categorie][typeDonnee];
 }
 
