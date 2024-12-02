@@ -42,12 +42,21 @@
     <ClCompile Include="ImprimeurReservation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LecteurFichier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="LOG2400-A2024-TP4-Enonce.pdf">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="MV_offres_de_reservation.xlsx">
+    <None Include="MV_offres_de_reservation_Excursions.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MV_offres_de_reservation_Hebergement.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MV_offres_de_reservation_Vols.csv">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -71,6 +80,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ImprimeurReservation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisiteurImprimeur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LecteurFichier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,10 +1,6 @@
 #include "AbstractReservation.h"
 using namespace std;
 
-std::string AbstractReservation::imprimer()
-{
-	return "À implémenter";
-}
 
 const AbstractReservation& AbstractReservation::getReservation()
 {
@@ -22,6 +18,6 @@ const double& AbstractReservation::getPrix()
 
 std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv)
 {
-	stream << reserv.imprimer();
+	stream << "not impl";
 	return stream;
 }

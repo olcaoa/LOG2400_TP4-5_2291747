@@ -30,5 +30,4 @@ std::string Journee::getDate() const {
 
 void Journee::accept(VisiteurImprimeur& visiteur) {
     visiteur.visit(*this);
-    ReservationComposite::accept(visiteur); // Enfants
 }

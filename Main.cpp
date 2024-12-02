@@ -1,10 +1,11 @@
 #include "Reservation.h"
 #include "Voyage.h"
+#include "LecteurFichier.h"
 
 using namespace std;
 
 int main() {
-
+	LecteurFichier lecture;
 	Reservation firstReserv("first", "desc1", 100);
 	Reservation secReserv("second", "desc2", 200);
 	Journee firstDay;
