@@ -1,11 +1,9 @@
 #pragma once
 #include "AbstractReservationComposite.h"
 
-class Segment : AbstractReservationComposite
+class Segment : public ReservationComposite
 {
 protected:
 	std::string imprimer() override;
-public:
-	const std::string& getNom() override;
 };
 

@@ -119,8 +119,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractReservation.cpp" />
     <ClCompile Include="AbstractReservationComposite.cpp" />
-    <ClCompile Include="MV_pilote.cppNot" />
+    <ClCompile Include="Journee.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MV_pilote.cpp" />
+    <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="Voyage.cpp" />
   </ItemGroup>

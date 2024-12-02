@@ -8,11 +8,12 @@ class AbstractReservation
 {
 
 protected:
-	std::string nom;
-	std::string description;
-	double prix;
-	virtual std::string imprimer() = 0;
-
+	std::string _nom;
+	std::string _description;
+	double _prix;
 public:
-	const virtual std::string& getNom() = 0;
+	virtual std::string imprimer() = 0;
+	const virtual std::string& getNom();
+	const virtual double& getPrix();
+	friend std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv);
 };

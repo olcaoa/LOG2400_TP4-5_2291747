@@ -1,11 +1,11 @@
 #pragma once
 #include "AbstractReservationComposite.h"
+#include "Reservation.h"
 
-class Journee : AbstractReservationComposite
+class Journee : public ReservationComposite
 {
+private:
+	std::vector<Reservation*> _reservations;
 protected:
 	std::string imprimer() override;
-public:
-	const std::string& getNom() override;
-
 };
