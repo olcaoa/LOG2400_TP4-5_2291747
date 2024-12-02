@@ -1,13 +1,13 @@
 #include "Journee.h"
 #include <sstream>
 
-// Constructeur
+Journee::Journee() : _mois(1), _jour(1), _annee(2000) {}
+
 Journee::Journee(int mois, int jour, int annee) : _mois(mois), _jour(jour), _annee(annee) {
     _nom = "Journee " + getDate();
     _description = "Réservations pour la journée " + getDate();
 }
 
-// Accesseurs pour la date
 int Journee::getMois() const {
     return _mois;
 }
@@ -23,7 +23,7 @@ int Journee::getAnnee() const {
 std::string Journee::getDate() const {
     std::ostringstream oss;
     oss << _mois << "/"
-        <<  _jour << "/"
+        << _jour << "/"
         << _annee;
     return oss.str();
 }
