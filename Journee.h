@@ -19,6 +19,8 @@ private:
     int _annee;
 
 public:
+	Journee();
+
     Journee(int mois, int jour, int annee);
     int getMois() const;
     int getJour() const;
