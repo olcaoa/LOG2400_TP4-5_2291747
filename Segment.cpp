@@ -1,6 +1,12 @@
 #include "Segment.h"
 #include <sstream>
 
+
+std::string Segment::imprimer()
+{
+    return "A implementer \n" + imprimerEnfants();
+}
+
 Segment::Segment() : ReservationComposite() {}
 
 void Segment::ajouterJournee(Journee* journee) {

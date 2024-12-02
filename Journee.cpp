@@ -28,6 +28,7 @@ std::string Journee::getDate() const {
     return oss.str();
 }
 
-std::string Journee::imprimer() {
-    return "Date: " + getDate() + "\nRéservations :\n" + imprimerEnfants();
+std::string Journee::imprimer()
+{
+    return "Date: " + getDate() + "\nReservations :\n" + imprimerEnfants();
 }

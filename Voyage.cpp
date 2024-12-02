@@ -1,5 +1,10 @@
 #include "Voyage.h"
 
+std::string Voyage::imprimer()
+{
+    return "A implementer \n" + imprimerEnfants();
+}
+
 Voyage::Voyage() : ReservationComposite() {}
 
 void Voyage::ajouterSegment(Segment* segment) {

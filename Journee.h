@@ -1,15 +1,7 @@
 #pragma once
-#include "ReservationComposite.h"
-#include "Reservation.h"
 #include <vector>
 #include <string>
-
-class Journee : public ReservationComposite
-{
-protected:
-	std::string imprimer() override;
-};
-
+#include "ReservationComposite.h"
 
 class Journee : public ReservationComposite
 {
@@ -17,7 +9,8 @@ private:
     int _mois;
     int _jour;
     int _annee;
-
+protected:
+    std::string imprimer() override;
 public:
 	Journee();
 

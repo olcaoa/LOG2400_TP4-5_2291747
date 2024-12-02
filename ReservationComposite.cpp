@@ -37,6 +37,7 @@ std::string ReservationComposite::imprimerEnfants()
 	string out = "";
 	for (AbstractReservation* reserv : _reservations) {
 		out += imprimeur.imprimer(*reserv);
+		cout << imprimeur.imprimer(*reserv) << endl;
 	}
 	return out;
 }

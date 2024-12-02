@@ -1,5 +1,4 @@
 #pragma once
-#include "ReservationComposite.h"
 #include "Journee.h"
 #include <vector>
 #include <string>
@@ -7,9 +6,9 @@
 class Segment : public ReservationComposite
 {
 private:
-    std::string imprimer() override;
     std::vector<Journee*> _journees;
-
+protected:
+    std::string imprimer() override;
 public:
     Segment();
 
