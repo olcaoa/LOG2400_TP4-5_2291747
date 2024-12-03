@@ -31,12 +31,12 @@ LecteurFichier::LecteurFichier() {
 	map<string, vector<string>> vols = lireCSV(chemin + "Vols.csv");
 	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergements.csv");
 	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions");
-	_donneesParCategorie["Vols"] = vols;
-	_donneesParCategorie["Hebergements"] = hebergement;
-	_donneesParCategorie["Excursions"] = excursion;
+	_donneesParCategorie[cles[0]] = vols;
+	_donneesParCategorie[cles[1]] = hebergement;
+	_donneesParCategorie[cles[2]] = excursion;
 }
 
-std::vector<std::string>& LecteurFichier::obtenirDonnees(std::string categorie, std::string typeDonnee)
+std::vector<std::string> LecteurFichier::obtenirDonnees(std::string categorie, std::string typeDonnee)
 {
 	return _donneesParCategorie[categorie][typeDonnee];
 }

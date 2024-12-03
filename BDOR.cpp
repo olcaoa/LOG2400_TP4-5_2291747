@@ -2,7 +2,14 @@
 #include "Reservation.h"
 #include <stdexcept>
 
-BDOR::BDOR() {}
+double BDOR::convertirPrix(const std::string& devise, double prix)
+{
+    return 0.0;
+}
+
+BDOR::BDOR() {
+    importerReservations(lecteur);
+}
 
 BDOR& BDOR::getInstance() {
     static BDOR instance;
@@ -31,35 +38,22 @@ double convertirPrix(const std::string& devise, double prix) {
     return prix;
 }
 
-void BDOR::importerReservations(const LecteurFichier& lecteur) {
-    for (const auto& categorie : lecteur._donneesParCategorie) {
-        std::vector<Reservation> reservationsImportees;
-        
-        for (const auto& typeDonnee : categorie.second) {
-            if (categorie.first == "Vols") {
-                for (size_t i = 0; i < typeDonnee.second.size(); i += 15) {
-                    std::string nom = typeDonnee.second[i];
-                    std::string description = typeDonnee.second[i + 3] + " -> " + typeDonnee.second[i + 4]; // Lieu de départ et d'arrivée
-                    double prix = std::stod(typeDonnee.second[i + 13]);
-                    std::string devise = typeDonnee.second[i + 14];
-
-                    prix = convertirPrix(devise, prix);
-                    Reservation reservation(nom, description, prix);
-                    reservationsImportees.push_back(reservation);
-                }
-            } else if (categorie.first == "Hebergements" || categorie.first == "Excursions") {
-                for (size_t i = 0; i < typeDonnee.second.size(); i += 7) {
-                    std::string nom = typeDonnee.second[i];
-                    std::string description = typeDonnee.second[i + 1]; // L'endroit
-                    double prix = std::stod(typeDonnee.second[i + 5]); // Prix
-                    std::string devise = typeDonnee.second[i + 6]; // Devise
-
-                    Reservation reservation(nom, description, prix);
-                    reservationsImportees.push_back(reservation);
-                }
+void BDOR::importerReservations(LecteurFichier& lecteur) {
+    for (string category : lecteur.cles) {
+        vector<string> noms = lecteur.obtenirDonnees(category, "m_nom");
+        vector<string> prix = lecteur.obtenirDonnees(category, "m_prixUnitaire");
+        if (category == lecteur.cles[0]) {
+            auto desc = lecteur.obtenirDonnees(category, "m_jourPrevuDepart");
+            for (int i = 0; i < noms.size(); i++) {
+                reservations[category].push_back(Reservation(noms[i], desc[i], stod(prix[i])));
             }
         }
-        reservations[categorie.first] = reservationsImportees;
+        else {
+            for (int i = 0; i < noms.size(); i++) {
+                reservations[category].push_back(Reservation(noms[i], "A voir", stod(prix[i])));
+            }
+        }
     }
 }
+       
 

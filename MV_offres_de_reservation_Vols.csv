@@ -1,4 +1,4 @@
-mm_nom,m_transporteur,m_noVol,m_lieuDepart,m_lieuArrivee,m_jourPrevuDepart,m_heurePrevueDepart,m_jourPrevuArrivee,m_heurePrevueArrivee,m_avion,m_classe,m_wifi,m_prixUnitaire,m_devise
+m_nom,m_transporteur,m_noVol,m_lieuDepart,m_lieuArrivee,m_jourPrevuDepart,m_heurePrevueDepart,m_jourPrevuArrivee,m_heurePrevueArrivee,m_avion,m_classe,m_wifi,m_prixUnitaire,m_devise
 Air Canada AC 870 2024-10-26,Air Canada,AC 870,YUL,CDG,2024-10-26,21:20,2024-10-27,9:30,Airbus A330-300,Economique,true,1127,CAD
 Ryanair FR 5238 2024-10-26,Ryanair,FR 5238,RAK,BRU,2024-10-26,15:05,2024-10-26,19:35,Boeing 737,Economique,false,402,CAD
 Emirates EK 160 2024-10-27,Emirates,EK 160,OSL,DXB,2024-10-27,14:00,2024-10-27,23:55,Boeing 777,Affaires,true,3295,CAD
