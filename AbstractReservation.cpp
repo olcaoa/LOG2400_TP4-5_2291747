@@ -25,6 +25,7 @@ const double& AbstractReservation::getPrix()
 
 std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv)
 {
+	std::cout << "------" << endl;
 	reserv.accept(*reserv._visite);
 	stream << "------" << endl;
 	return stream;

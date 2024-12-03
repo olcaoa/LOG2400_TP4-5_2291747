@@ -7,13 +7,13 @@
 #include <format>
 
 void ImprimeurReservation::visit(Reservation& reservation) {
-    std::cout << "Reservation:\nNom: " << reservation.getNom()
-              << "\nDescription: " << reservation._description
-              << "\nPrix: " << reservation.getPrix() << "$\n";
+    std::cout << "   Reservation:\n    Nom: " << reservation.getNom()
+              << "\n    Description: " << reservation._description
+              << "\n    Prix: " << reservation.getPrix() << "$\n";
 }
 
 void ImprimeurReservation::visit(Journee& journee) {
-    std::cout << std::format("Journee {}", journee.getNom()) << 
+    std::cout << std::format("  Journee {} ", journee.getNom()) << 
         "[Date: " << journee.getMois() << "/" << journee.getJour() << "/" << journee.getAnnee() << "]:\n";
     for (auto* reservation : journee.obtenirReservations()) {
         reservation->accept(*this);
@@ -21,7 +21,7 @@ void ImprimeurReservation::visit(Journee& journee) {
 }
 
 void ImprimeurReservation::visit(Segment& segment) {
-    std::cout << std::format("Segment {} contenant les journees suivantes:\n", segment.getNom());
+    std::cout << std::format(" Segment {} contenant les journees suivantes:\n", segment.getNom());
     for (auto* journee : segment.obtenirReservations()) {
         journee->accept(*this);
     }

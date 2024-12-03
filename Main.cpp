@@ -22,7 +22,7 @@ int main() {
 	Voyage secVoyage(firstVoyage);
 	Reservation secondReserv = db["Vols"][0];
 
-	cout << secVoyage;
+	cout << secReserv;
 
 	return 0;
 }
