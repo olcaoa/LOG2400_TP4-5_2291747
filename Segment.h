@@ -7,7 +7,8 @@ class Segment : public ReservationComposite
 {
 public:
     Segment();
+    Segment(const Segment& autreSegment);
 
     void accept(VisiteurImprimeur& visiteur) override;
-
+    AbstractReservation* clone() const override;
 };

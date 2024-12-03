@@ -1,6 +1,16 @@
 #include "ReservationComposite.h"
 using namespace std;
 
+ReservationComposite::ReservationComposite() : AbstractReservation() {}
+
+ReservationComposite::ReservationComposite(const ReservationComposite& autreComposite)
+    : AbstractReservation(autreComposite)
+{
+    for (auto reservation : autreComposite._reservations) {
+        this->_reservations.push_back(reservation->clone());
+    }
+}
+
 double ReservationComposite::calculerPrix()
 {
 
@@ -36,4 +46,12 @@ void ReservationComposite::accept(VisiteurImprimeur& visiteur) {
     for (AbstractReservation* reservation : _reservations) {
         reservation->accept(visiteur);
     }
+}
+
+AbstractReservation* ReservationComposite::clone() const {
+    ReservationComposite* clone = new ReservationComposite(*this);
+    for (auto reservation : _reservations) {
+        clone->ajouterReservation(reservation->clone());
+    }
+    return clone;
 }
