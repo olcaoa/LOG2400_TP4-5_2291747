@@ -69,7 +69,7 @@ void BDOR::importerReservations(LecteurFichier* lecteur) {
         }
         else {
             for (int i = 0; i < noms->size(); i++) {
-                reservations[category].push_back(Reservation(noms->operator[](i), "A voir", stod(prix->operator[](i))));
+                reservations[category].push_back(Reservation(noms->operator[](i), "", stod(prix->operator[](i))));
             }
         }
     }

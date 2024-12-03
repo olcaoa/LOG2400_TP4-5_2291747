@@ -7,9 +7,11 @@
 #include <format>
 
 void ImprimeurReservation::visit(Reservation& reservation) {
-    std::cout << "   Reservation:\n    Nom: " << reservation.getNom()
-              << "\n    Description: " << reservation._description
-              << "\n    Prix: " << reservation.getPrix() << "$\n";
+    std::cout << "   Reservation:\n    Nom: " << reservation.getNom();
+    if (!reservation._description.empty()) {
+        std::cout << "\n    Description: " << reservation._description;
+    }
+    std::cout << "\n    Prix: " << reservation.getPrix() << "$\n";
 }
 
 void ImprimeurReservation::visit(Journee& journee) {

@@ -54,6 +54,15 @@
     <ClCompile Include="BDOR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ImprimeurLoggeur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractReservationDecoree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReservationLoggeur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="LOG2400-A2024-TP4-Enonce.pdf">
@@ -104,6 +113,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BDOR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImprimeurLoggeur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractReservationDecoree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReservationLoggeur.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
