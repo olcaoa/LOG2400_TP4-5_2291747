@@ -10,6 +10,7 @@ private:
     int _mois;
     int _jour;
     int _annee;
+    AbstractReservation* clone() const override;
 
 public:
 	Journee();
@@ -22,5 +23,4 @@ public:
     std::string getDate() const;
 
     void accept(VisiteurImprimeur& visiteur) override;
-    AbstractReservation* clone() const override;
 };

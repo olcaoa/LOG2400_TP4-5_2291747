@@ -21,13 +21,7 @@ int main() {
 	firstVoyage.ajouterReservation(&firstSeg);
 	Voyage secVoyage(firstVoyage);
 
-	ImprimeurReservation imprimeur;
-    secVoyage.accept(imprimeur);
-
-	// cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
-	// cout << "day:" << endl << firstDay << "prix: " << (int)firstDay.getPrix() << "$$" << endl;
-	// cout << "seg:" << endl << firstSeg << "prix: " << (int)firstSeg.getPrix() << "$$" << endl;
-	cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
+	cout << secVoyage;
 
 	return 0;
 }

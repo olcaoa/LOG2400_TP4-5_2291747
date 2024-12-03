@@ -1,12 +1,12 @@
 #include "BDORProxy.h"
 
 BDORProxy::BDORProxy() {
-    bdor = &BDOR::getInstance();
+    _bdor = &BDOR::getInstance();
 }
 
 std::vector<Reservation>& BDORProxy::acceder(std::string categorie) {
-    if (!bdor) {
-        bdor = &BDOR::getInstance();
+    if (!_bdor) {
+        _bdor = &BDOR::getInstance();
     }
-    return bdor->acceder(categorie);
+    return _bdor->acceder(categorie);
 }

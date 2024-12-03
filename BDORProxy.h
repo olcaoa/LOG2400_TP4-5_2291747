@@ -6,7 +6,7 @@ public:
 	BDORProxy();
 	~BDORProxy() = default;
 private:
-	BDOR* bdor;
+	BDOR* _bdor;
 	virtual std::vector<Reservation>& acceder(std::string) override;
 };
 

@@ -44,11 +44,11 @@ void Journee::accept(VisiteurImprimeur& visiteur) {
 }
 
 AbstractReservation* Journee::clone() const {
-    Journee nouveauJour = Journee(this->getMois(), this->getJour(), this->getAnnee());
+    Journee* nouveauJour = new Journee(this->getMois(), this->getJour(), this->getAnnee());
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Reservation* r = dynamic_cast<Reservation*>(currRes);
-        nouveauJour.ajouterReservation(&Reservation(*r));
+        nouveauJour->ajouterReservation(new Reservation(*r));
     }
-    return &nouveauJour;
+    return nouveauJour;
 }

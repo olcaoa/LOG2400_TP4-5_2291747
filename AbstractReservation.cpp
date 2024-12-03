@@ -1,8 +1,13 @@
 #include "AbstractReservation.h"
+#include "ImprimeurReservation.h"
 using namespace std;
 
-AbstractReservation::AbstractReservation() 
-    : _nom(""), _description(""), _prix(0.0) {}
+AbstractReservation::AbstractReservation()
+{
+	_nom = "";
+	_prix = 0;
+	_visite = new ImprimeurReservation();
+}
 
 AbstractReservation& AbstractReservation::getReservation()
 {
@@ -20,6 +25,7 @@ const double& AbstractReservation::getPrix()
 
 std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv)
 {
-	stream << "not impl";
+	reserv.accept(*reserv._visite);
+	stream << "------" << endl;
 	return stream;
 }

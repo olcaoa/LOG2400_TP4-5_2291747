@@ -21,7 +21,6 @@ const double& ReservationComposite::getPrix()
 void ReservationComposite::ajouterReservation(AbstractReservation* r)
 {
 	_reservations.push_back(r);
-	cout << this->getNom() << _reservations.size();
 }
 
 void ReservationComposite::enleverReservation(AbstractReservation* r)
@@ -30,7 +29,7 @@ void ReservationComposite::enleverReservation(AbstractReservation* r)
 	_reservations.erase(position);
 }
 
-std::vector<AbstractReservation*>& ReservationComposite::obtenirReservations()
+std::vector<AbstractReservation*> ReservationComposite::obtenirReservations()
 {
 	return _reservations;
 }

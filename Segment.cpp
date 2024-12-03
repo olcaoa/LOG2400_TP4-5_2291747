@@ -23,11 +23,11 @@ void Segment::accept(VisiteurImprimeur& visiteur) {
 
 AbstractReservation* Segment::clone() const
 {
-    Segment nouveauSeg = Segment(this->_nom);
+    Segment* nouveauSeg = new Segment(this->_nom);
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Journee* r = dynamic_cast<Journee*>(currRes);
-        nouveauSeg.ajouterReservation(&Journee(*r));
+        nouveauSeg->ajouterReservation(new Journee(*r));
     }
-    return &nouveauSeg;
+    return nouveauSeg;
 }

@@ -11,7 +11,7 @@ private:
 	double convertirPrix(const std::string& devise, double prix);
 protected:
     void liberer();
-    LecteurFichier* lecteur;
+    LecteurFichier* _lecteur;
     BDOR();
 public:
     ~BDOR();

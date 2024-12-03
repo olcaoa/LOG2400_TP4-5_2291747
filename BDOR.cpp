@@ -23,8 +23,8 @@ BDOR::~BDOR()
 }
 
 BDOR::BDOR() {
-    lecteur = new LecteurFichier;
-    importerReservations(lecteur);
+    _lecteur = new LecteurFichier;
+    importerReservations(_lecteur);
 }
 
 BDOR& BDOR::getInstance() {
@@ -58,10 +58,10 @@ double convertirPrix(const std::string& devise, double prix) {
 }
 
 void BDOR::importerReservations(LecteurFichier* lecteur) {
-    for (string category : lecteur->cles) {
+    for (string category : lecteur->_cles) {
         vector<string>* noms = lecteur->obtenirDonnees(category, "m_nom");
         vector<string>* prix = lecteur->obtenirDonnees(category, "m_prixUnitaire");
-        if (category == lecteur->cles[0]) {
+        if (category == lecteur->_cles[0]) {
             auto desc = lecteur->obtenirDonnees(category, "m_jourPrevuDepart");
             for (int i = 0; i < noms->size(); i++) {
                 reservations[category].push_back(Reservation(noms->operator[](i), desc->operator[](i), stod(prix->operator[](i))));

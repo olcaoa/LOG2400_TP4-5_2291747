@@ -16,13 +16,13 @@ Voyage::Voyage(const Voyage& autreVoyage)
 }
 
 AbstractReservation* Voyage::clone() const {
-    Voyage nouveauVoyage(this->_nom);
+    Voyage* nouveauVoyage = new Voyage(this->_nom);
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Segment* r = dynamic_cast<Segment*>(currRes);
-        nouveauVoyage.ajouterReservation(&Segment(*r));
+        nouveauVoyage->ajouterReservation(new Segment(*r));
     }
-    return &nouveauVoyage;
+    return nouveauVoyage;
 }
 
 void Voyage::accept(VisiteurImprimeur& visiteur) {

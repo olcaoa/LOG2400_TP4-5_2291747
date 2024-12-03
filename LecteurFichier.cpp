@@ -44,16 +44,16 @@ LecteurFichier::LecteurFichier() {
 	map<string, vector<string>> vols = lireCSV(chemin + "Vols.csv");
 	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergement.csv");
 	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions.csv");
-	_donneesParCategorie[cles[0]] = vols;
-	_donneesParCategorie[cles[1]] = hebergement;
-	_donneesParCategorie[cles[2]] = excursion;
+	_donneesParCategorie[_cles[0]] = vols;
+	_donneesParCategorie[_cles[1]] = hebergement;
+	_donneesParCategorie[_cles[2]] = excursion;
 }
 
 LecteurFichier::~LecteurFichier()
 {
-		effacerMap(_donneesParCategorie[cles[0]]);
-		effacerMap(_donneesParCategorie[cles[1]]);
-		effacerMap(_donneesParCategorie[cles[2]]);
+		effacerMap(_donneesParCategorie[_cles[0]]);
+		effacerMap(_donneesParCategorie[_cles[1]]);
+		effacerMap(_donneesParCategorie[_cles[2]]);
 		_donneesParCategorie.clear();
 }
 
