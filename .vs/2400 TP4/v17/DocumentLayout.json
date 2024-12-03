@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:BDORProxy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractBDOR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:AbstractBDOR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:BDORProxy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:LecteurFichier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractBDOR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:AbstractBDOR.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:BDOR.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:BDORProxy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractBDOR.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,7 +90,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "BDORProxy.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.cpp",
+              "RelativeDocumentMoniker": "BDORProxy.cpp",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.cpp",
+              "RelativeToolTip": "BDORProxy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T03:33:03.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AbstractBDOR.cpp",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractBDOR.cpp",
               "RelativeDocumentMoniker": "AbstractBDOR.cpp",
@@ -99,20 +116,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
               "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp",
               "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-03T02:21:18.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "LecteurFichier.cpp",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.cpp",
               "RelativeDocumentMoniker": "LecteurFichier.cpp",
@@ -120,12 +137,11 @@
               "RelativeToolTip": "LecteurFichier.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T02:20:12.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T02:20:12.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "LecteurFichier.h",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h",
               "RelativeDocumentMoniker": "LecteurFichier.h",
@@ -138,19 +154,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "BDORProxy.h",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
               "RelativeDocumentMoniker": "BDORProxy.h",
               "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
               "RelativeToolTip": "BDORProxy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T02:16:41.448Z"
+              "WhenOpened": "2024-12-03T02:16:41.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AbstractBDOR.h",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractBDOR.h",
               "RelativeDocumentMoniker": "AbstractBDOR.h",
@@ -162,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BDOR.cpp",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.cpp",
               "RelativeDocumentMoniker": "BDOR.cpp",
@@ -170,12 +187,11 @@
               "RelativeToolTip": "BDOR.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T02:16:29.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T02:16:29.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BDOR.h",
               "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h",
               "RelativeDocumentMoniker": "BDOR.h",

@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-	BDORProxy db(&BDOR::getInstance());
+	BDORProxy db;
 	Reservation firstReserv = db["Hebergement"][0];
 	Reservation secReserv("second", "desc2", 200);
 	Journee firstDay;

@@ -1,8 +1,4 @@
-﻿  AbstractBDOR.cpp
-  BDOR.cpp
-  BDORProxy.cpp
-  LecteurFichier.cpp
+﻿  BDORProxy.cpp
   Main.cpp
   Generating Code...
-  LINK : C:\Users\alons\Documents\POLYTECHNIQUE\TRAVAIL EQUIPE\2400\LOG2400_TP4-5_2291747\x64\Debug\2400 TP4.exe not found or not built by the last incremental link; performing full link
   2400 TP4.vcxproj -> C:\Users\alons\Documents\POLYTECHNIQUE\TRAVAIL EQUIPE\2400\LOG2400_TP4-5_2291747\x64\Debug\2400 TP4.exe
