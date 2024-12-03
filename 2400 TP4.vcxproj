@@ -119,7 +119,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractBDOR.cpp" />
     <ClCompile Include="AbstractReservation.cpp" />
+    <ClCompile Include="BDOR.cpp" />
+    <ClCompile Include="BDORProxy.cpp" />
     <ClCompile Include="LecteurFichier.cpp" />
     <ClCompile Include="ReservationComposite.cpp" />
     <ClCompile Include="Journee.cpp" />
@@ -137,7 +140,10 @@
     <None Include="MV_offres_de_reservation_Vols.csv" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractBDOR.h" />
     <ClInclude Include="AbstractReservation.h" />
+    <ClInclude Include="BDOR.h" />
+    <ClInclude Include="BDORProxy.h" />
     <ClInclude Include="LecteurFichier.h" />
     <ClInclude Include="ReservationComposite.h" />
     <ClInclude Include="Journee.h" />
