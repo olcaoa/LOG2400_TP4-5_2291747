@@ -4,10 +4,9 @@ BDORProxy::BDORProxy() {
     bdor = &BDOR::getInstance();
 }
 
-const std::vector<Reservation>& BDORProxy::acceder(std::string categorie) {
+std::vector<Reservation>& BDORProxy::acceder(std::string categorie) {
     if (!bdor) {
-        throw std::runtime_error("Accès à un BDOR non initialisé.");
+        bdor = &BDOR::getInstance();
     }
-
     return bdor->acceder(categorie);
 }

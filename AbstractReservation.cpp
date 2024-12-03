@@ -4,7 +4,7 @@ using namespace std;
 AbstractReservation::AbstractReservation() 
     : _nom(""), _description(""), _prix(0.0) {}
 
-const AbstractReservation& AbstractReservation::getReservation()
+AbstractReservation& AbstractReservation::getReservation()
 {
 	return *this;
 }

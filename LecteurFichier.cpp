@@ -27,6 +27,18 @@ std::map<std::string, std::vector<std::string>> lireCSV(std::string cheminFichie
 	return mapDeRetour;
 }
 
+
+void effacerMap(map<string, vector<string>> map) {
+	for (auto pair : map) {
+		for (auto vector : pair.second) {
+			vector.clear();
+			vector.shrink_to_fit();
+		}
+	}
+	map.clear();
+}
+
+
 LecteurFichier::LecteurFichier() {
 	using namespace std;
 	map<string, vector<string>> vols = lireCSV(chemin + "Vols.csv");
@@ -37,8 +49,16 @@ LecteurFichier::LecteurFichier() {
 	_donneesParCategorie[cles[2]] = excursion;
 }
 
-std::vector<std::string> LecteurFichier::obtenirDonnees(std::string categorie, std::string typeDonnee)
+LecteurFichier::~LecteurFichier()
 {
-	return _donneesParCategorie[categorie][typeDonnee];
+		effacerMap(_donneesParCategorie[cles[0]]);
+		effacerMap(_donneesParCategorie[cles[1]]);
+		effacerMap(_donneesParCategorie[cles[2]]);
+		_donneesParCategorie.clear();
+}
+
+std::vector<std::string>* LecteurFichier::obtenirDonnees(std::string categorie, std::string typeDonnee)
+{
+	return &_donneesParCategorie[categorie][typeDonnee];
 }
 

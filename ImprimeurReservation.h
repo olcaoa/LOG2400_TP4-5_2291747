@@ -7,4 +7,5 @@ public:
     void visit(Journee& journee) override;
     void visit(Segment& segment) override;
     void visit(Voyage& voyage) override;
+    ~ImprimeurReservation() = default;
 };

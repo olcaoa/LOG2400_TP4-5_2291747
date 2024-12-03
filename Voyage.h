@@ -5,11 +5,10 @@
 
 class Voyage : public ReservationComposite
 {
-
 public:
-    Voyage();
+    Voyage(std::string nom);
     Voyage(const Voyage& autreVoyage);
-
+    ~Voyage();
     void accept(VisiteurImprimeur& visiteur) override;
     AbstractReservation* clone() const override;
 };

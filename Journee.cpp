@@ -4,12 +4,19 @@
 Journee::Journee() : _mois(1), _jour(1), _annee(2000) {}
 
 Journee::Journee(const Journee& other)
-    : ReservationComposite(other), _mois(other._mois), _jour(other._jour), _annee(other._annee) {}
-
+{
+    *this = *dynamic_cast<Journee*>(other.clone());
+}
 
 Journee::Journee(int mois, int jour, int annee) : _mois(mois), _jour(jour), _annee(annee) {
     _nom = "Journee " + getDate();
     _description = "Réservations pour la journée " + getDate();
+}
+
+Journee::~Journee()
+{
+    _reservations.clear();
+    _reservations.shrink_to_fit();
 }
 
 int Journee::getMois() const {
@@ -37,5 +44,11 @@ void Journee::accept(VisiteurImprimeur& visiteur) {
 }
 
 AbstractReservation* Journee::clone() const {
-    return new Journee(*this);
+    Journee nouveauJour = Journee(this->getMois(), this->getJour(), this->getAnnee());
+    for (AbstractReservation* r : this->_reservations) {
+        AbstractReservation* currRes = r;
+        Reservation* r = dynamic_cast<Reservation*>(currRes);
+        nouveauJour.ajouterReservation(&Reservation(*r));
+    }
+    return &nouveauJour;
 }

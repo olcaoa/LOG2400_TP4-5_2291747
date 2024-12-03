@@ -9,12 +9,13 @@ class BDOR : public AbstractBDOR {
 private:
     std::map<std::string, std::vector<Reservation>> reservations;
 	double convertirPrix(const std::string& devise, double prix);
-
 protected:
-    LecteurFichier lecteur;
+    void liberer();
+    LecteurFichier* lecteur;
     BDOR();
 public:
+    ~BDOR();
     static BDOR& getInstance();
-    virtual const std::vector<Reservation>& acceder(std::string) override;
-    void importerReservations(LecteurFichier& lecteur);
+    virtual std::vector<Reservation>& acceder(std::string) override;
+    void importerReservations(LecteurFichier* lecteur);
 };

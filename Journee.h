@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include "ReservationComposite.h"
+#include "Reservation.h"
 
 class Journee : public ReservationComposite
 {
@@ -14,7 +15,7 @@ public:
 	Journee();
     Journee(const Journee& other);
     Journee(int mois, int jour, int annee);
-
+    ~Journee();
     int getMois() const;
     int getJour() const;
     int getAnnee() const;

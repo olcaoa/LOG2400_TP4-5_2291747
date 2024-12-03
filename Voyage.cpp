@@ -1,11 +1,28 @@
 #include "Voyage.h"
 
-Voyage::Voyage() : ReservationComposite() {}
+Voyage::~Voyage()
+{
+    _reservations.clear();
+    _reservations.shrink_to_fit();
+}
 
-Voyage::Voyage(const Voyage& other) : ReservationComposite(other) {}
+Voyage::Voyage(std::string nom) : ReservationComposite() {
+    _nom = nom;
+}
+
+Voyage::Voyage(const Voyage& autreVoyage)
+{
+    *this = *dynamic_cast<Voyage*>(autreVoyage.clone());
+}
 
 AbstractReservation* Voyage::clone() const {
-    return new Voyage(*this);
+    Voyage nouveauVoyage(this->_nom);
+    for (AbstractReservation* r : this->_reservations) {
+        AbstractReservation* currRes = r;
+        Segment* r = dynamic_cast<Segment*>(currRes);
+        nouveauVoyage.ajouterReservation(&Segment(*r));
+    }
+    return &nouveauVoyage;
 }
 
 void Voyage::accept(VisiteurImprimeur& visiteur) {

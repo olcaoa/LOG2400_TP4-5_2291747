@@ -11,6 +11,5 @@ public:
     virtual void visit(Journee& journee) = 0;
     virtual void visit(Segment& segment) = 0;
     virtual void visit(Voyage& voyage) = 0;
-
-    virtual ~VisiteurImprimeur() = default;
+    ~VisiteurImprimeur() = default;
 };

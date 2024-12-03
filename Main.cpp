@@ -8,18 +8,21 @@ using namespace std;
 int main() {
 	BDORProxy db;
 	Reservation firstReserv = db["Hebergement"][0];
-	Reservation secReserv("second", "desc2", 200);
+	Reservation secReserv(firstReserv);
 	Journee firstDay;
 	firstDay.ajouterReservation(&firstReserv);
 	firstDay.ajouterReservation(&secReserv);
-	Segment firstSeg;
+	Journee secDay(firstDay);
+	Segment firstSeg("firstSeg");
+	Segment secSeg(firstSeg);
 	firstSeg.ajouterReservation(&firstDay);
 	firstSeg.ajouterReservation(&firstDay);
-	Voyage firstVoyage;
+	Voyage firstVoyage("firstV");
 	firstVoyage.ajouterReservation(&firstSeg);
+	Voyage secVoyage(firstVoyage);
 
 	ImprimeurReservation imprimeur;
-    firstVoyage.accept(imprimeur);
+    secVoyage.accept(imprimeur);
 
 	// cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
 	// cout << "day:" << endl << firstDay << "prix: " << (int)firstDay.getPrix() << "$$" << endl;

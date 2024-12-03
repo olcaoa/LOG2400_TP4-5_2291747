@@ -6,9 +6,9 @@
 class Segment : public ReservationComposite
 {
 public:
-    Segment();
+    Segment(std::string nom);
+    ~Segment();
     Segment(const Segment& autreSegment);
-
     void accept(VisiteurImprimeur& visiteur) override;
     AbstractReservation* clone() const override;
 };

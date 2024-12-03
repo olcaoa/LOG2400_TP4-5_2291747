@@ -7,16 +7,35 @@ double BDOR::convertirPrix(const std::string& devise, double prix)
     return 0.0;
 }
 
+void BDOR::liberer()
+{
+    for (auto r : this->reservations) {
+        r.second.clear();
+        r.second.shrink_to_fit();
+    }
+    reservations.clear();
+
+}
+
+BDOR::~BDOR()
+{
+    liberer();
+}
+
 BDOR::BDOR() {
+    lecteur = new LecteurFichier;
     importerReservations(lecteur);
 }
 
 BDOR& BDOR::getInstance() {
     static BDOR instance;
+    if (instance.reservations.size() == 0) {
+        instance.importerReservations(new LecteurFichier);
+    }
     return instance;
 }
 
-const std::vector<Reservation>& BDOR::acceder(std::string categorie) {
+std::vector<Reservation>& BDOR::acceder(std::string categorie) {
     if (reservations.find(categorie) != reservations.end()) {
         return reservations[categorie];
     } else {
@@ -38,22 +57,23 @@ double convertirPrix(const std::string& devise, double prix) {
     return prix;
 }
 
-void BDOR::importerReservations(LecteurFichier& lecteur) {
-    for (string category : lecteur.cles) {
-        vector<string> noms = lecteur.obtenirDonnees(category, "m_nom");
-        vector<string> prix = lecteur.obtenirDonnees(category, "m_prixUnitaire");
-        if (category == lecteur.cles[0]) {
-            auto desc = lecteur.obtenirDonnees(category, "m_jourPrevuDepart");
-            for (int i = 0; i < noms.size(); i++) {
-                reservations[category].push_back(Reservation(noms[i], desc[i], stod(prix[i])));
+void BDOR::importerReservations(LecteurFichier* lecteur) {
+    for (string category : lecteur->cles) {
+        vector<string>* noms = lecteur->obtenirDonnees(category, "m_nom");
+        vector<string>* prix = lecteur->obtenirDonnees(category, "m_prixUnitaire");
+        if (category == lecteur->cles[0]) {
+            auto desc = lecteur->obtenirDonnees(category, "m_jourPrevuDepart");
+            for (int i = 0; i < noms->size(); i++) {
+                reservations[category].push_back(Reservation(noms->operator[](i), desc->operator[](i), stod(prix->operator[](i))));
             }
         }
         else {
-            for (int i = 0; i < noms.size(); i++) {
-                reservations[category].push_back(Reservation(noms[i], "A voir", stod(prix[i])));
+            for (int i = 0; i < noms->size(); i++) {
+                reservations[category].push_back(Reservation(noms->operator[](i), "A voir", stod(prix->operator[](i))));
             }
         }
     }
+    delete lecteur; 
 }
        
 
