@@ -6,6 +6,10 @@ Reservation::Reservation(std::string nom, std::string description, double prix) 
     this->_prix = prix;
 }
 
+AbstractReservation* Reservation::clone() const {
+    return new Reservation(*this);
+}
+
 void Reservation::accept(VisiteurImprimeur& visiteur) {
     visiteur.visit(*this);
 }

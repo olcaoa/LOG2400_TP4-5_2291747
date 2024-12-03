@@ -12,11 +12,14 @@ private:
 
 public:
 	Journee();
-
+    Journee(const Journee& other);
     Journee(int mois, int jour, int annee);
+
     int getMois() const;
     int getJour() const;
     int getAnnee() const;
     std::string getDate() const;
+
     void accept(VisiteurImprimeur& visiteur) override;
+    AbstractReservation* clone() const override;
 };

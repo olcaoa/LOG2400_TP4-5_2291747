@@ -8,6 +8,8 @@ class Voyage : public ReservationComposite
 
 public:
     Voyage();
-    void accept(VisiteurImprimeur& visiteur) override;
+    Voyage(const Voyage& autreVoyage);
 
+    void accept(VisiteurImprimeur& visiteur) override;
+    AbstractReservation* clone() const override;
 };
