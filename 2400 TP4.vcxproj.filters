@@ -45,6 +45,18 @@
     <ClCompile Include="LecteurFichier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="AbstractBDOR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BDORProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BDOR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+>>>>>>> f4071ca3bcee83dae676b98a7a2233bc4db21e04
   </ItemGroup>
   <ItemGroup>
     <None Include="LOG2400-A2024-TP4-Enonce.pdf">
@@ -88,5 +100,17 @@
     <ClInclude Include="LecteurFichier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="AbstractBDOR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BDORProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BDOR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+>>>>>>> f4071ca3bcee83dae676b98a7a2233bc4db21e04
   </ItemGroup>
 </Project>
