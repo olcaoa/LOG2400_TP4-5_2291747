@@ -1,12 +1,13 @@
 #include "Reservation.h"
 #include "Voyage.h"
 #include "LecteurFichier.h"
+#include "BDORProxy.h"
 
 using namespace std;
 
 int main() {
-	LecteurFichier lecture;
-	Reservation firstReserv("first", "desc1", 100);
+	BDORProxy db;
+	Reservation firstReserv = db["Hebergement"][0];
 	Reservation secReserv("second", "desc2", 200);
 	Journee firstDay;
 	firstDay.ajouterReservation(&firstReserv);
@@ -23,7 +24,7 @@ int main() {
 	// cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
 	// cout << "day:" << endl << firstDay << "prix: " << (int)firstDay.getPrix() << "$$" << endl;
 	// cout << "seg:" << endl << firstSeg << "prix: " << (int)firstSeg.getPrix() << "$$" << endl;
-	// cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
+	cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
 
 	return 0;
 }

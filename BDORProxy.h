@@ -3,7 +3,7 @@
 class BDORProxy : public AbstractBDOR
 {
 public:
-	BDORProxy(BDOR* bdor);
+	BDORProxy();
 private:
 	BDOR* bdor;
 	virtual const std::vector<Reservation>& acceder(std::string) override;

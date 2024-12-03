@@ -1,6 +1,8 @@
 #include "BDORProxy.h"
 
-BDORProxy::BDORProxy(BDOR* bdor) : bdor(bdor) {}
+BDORProxy::BDORProxy() {
+    bdor = &BDOR::getInstance();
+}
 
 const std::vector<Reservation>& BDORProxy::acceder(std::string categorie) {
     if (!bdor) {

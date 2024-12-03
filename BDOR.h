@@ -11,9 +11,10 @@ private:
 	double convertirPrix(const std::string& devise, double prix);
 
 protected:
+    LecteurFichier lecteur;
     BDOR();
 public:
     static BDOR& getInstance();
     virtual const std::vector<Reservation>& acceder(std::string) override;
-    void importerReservations(const LecteurFichier& lecteur);
+    void importerReservations(LecteurFichier& lecteur);
 };

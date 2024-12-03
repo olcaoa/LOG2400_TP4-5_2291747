@@ -7,10 +7,12 @@
 using namespace std;
 class LecteurFichier
 {
-// private:
 public:
+	std::vector<std::string> obtenirDonnees(std::string categorie, std::string typeDonnee);
+private:
+	std::vector<string> cles = {"Vols", "Hebergement", "Excursions"};
 	LecteurFichier();
 	std::map<std::string, std::map<std::string, std::vector<std::string>>> _donneesParCategorie;
-	std::vector<std::string>& obtenirDonnees(std::string categorie, std::string typeDonnee);
+	friend class BDOR;
 };
 
