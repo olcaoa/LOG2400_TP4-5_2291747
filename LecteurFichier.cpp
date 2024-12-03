@@ -23,14 +23,15 @@ std::map<std::string, std::vector<std::string>> lireCSV(std::string cheminFichie
 			mapDeRetour[cles[i++]].push_back(donnee);
 		}
 	}
+	fichier.close();
 	return mapDeRetour;
 }
 
 LecteurFichier::LecteurFichier() {
 	using namespace std;
 	map<string, vector<string>> vols = lireCSV(chemin + "Vols.csv");
-	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergements.csv");
-	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions");
+	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergement.csv");
+	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions.csv");
 	_donneesParCategorie[cles[0]] = vols;
 	_donneesParCategorie[cles[1]] = hebergement;
 	_donneesParCategorie[cles[2]] = excursion;

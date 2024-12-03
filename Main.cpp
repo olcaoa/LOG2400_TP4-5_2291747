@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 	BDORProxy db(&BDOR::getInstance());
-	Reservation firstReserv = db["Vols"][0];
+	Reservation firstReserv = db["Hebergement"][0];
 	Reservation secReserv("second", "desc2", 200);
 	Journee firstDay;
 	firstDay.ajouterReservation(&firstReserv);
@@ -21,10 +21,10 @@ int main() {
 	ImprimeurReservation imprimeur;
     firstVoyage.accept(imprimeur);
 
-	cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
+	// cout << "reserv:" << endl << firstReserv << "prix: " << (int)firstReserv.getPrix() << "$$" << endl;
 	// cout << "day:" << endl << firstDay << "prix: " << (int)firstDay.getPrix() << "$$" << endl;
 	// cout << "seg:" << endl << firstSeg << "prix: " << (int)firstSeg.getPrix() << "$$" << endl;
-	// cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
+	cout << "voyage:" << endl << firstVoyage << "prix: " << (int)firstVoyage.getPrix() << "$$" << endl;
 
 	return 0;
 }
