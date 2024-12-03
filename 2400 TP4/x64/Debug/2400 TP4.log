@@ -1,2 +1,16 @@
-﻿  BDOR.cpp
+﻿  AbstractBDOR.cpp
+  AbstractReservation.cpp
+  BDOR.cpp
+  BDORProxy.cpp
+  LecteurFichier.cpp
+  ReservationComposite.cpp
+  Journee.cpp
+  Main.cpp
+  MV_pilote.cpp
+  ImprimeurReservation.cpp
+  Reservation.cpp
+  Segment.cpp
+  Voyage.cpp
+  Generating Code...
+C:\Users\alons\Documents\POLYTECHNIQUE\TRAVAIL EQUIPE\2400\LOG2400_TP4-5_2291747\ReservationComposite.cpp(16,1): warning C4172: returning address of local variable or temporary 
   2400 TP4.vcxproj -> C:\Users\alons\Documents\POLYTECHNIQUE\TRAVAIL EQUIPE\2400\LOG2400_TP4-5_2291747\x64\Debug\2400 TP4.exe
