@@ -5,15 +5,15 @@
 class ReservationComposite : public AbstractReservation
 {
 protected:
+	void ajouterReservation(AbstractReservation* r);
+	void enleverReservation(AbstractReservation* r);
+	std::vector<AbstractReservation*> obtenirReservations();
 	std::vector<AbstractReservation*> _reservations;
 	double calculerPrix();
 public:
 	~ReservationComposite() = default;
 	ReservationComposite();
 	const virtual double& getPrix() override;
-	void ajouterReservation(AbstractReservation* r);
-	void enleverReservation(AbstractReservation* r);
-	std::vector<AbstractReservation*> obtenirReservations();
 	void accept(VisiteurImprimeur& visiteur) override;
 	friend class ImprimeurReservation;
 };

@@ -21,6 +21,6 @@ public:
     int getJour() const;
     int getAnnee() const;
     std::string getDate() const;
-
+    void ajouterReservation(Reservation& r);
     void accept(VisiteurImprimeur& visiteur) override;
 };

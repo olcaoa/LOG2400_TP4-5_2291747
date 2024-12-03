@@ -9,6 +9,7 @@ public:
     Segment(std::string nom);
     ~Segment();
     Segment(const Segment& autreSegment);
+    void ajouterJournee(Journee& j);
     void accept(VisiteurImprimeur& visiteur) override;
     AbstractReservation* clone() const override;
 };

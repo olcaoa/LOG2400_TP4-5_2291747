@@ -17,6 +17,11 @@ Segment::Segment(const Segment& autreSegment)
     *this = *dynamic_cast<Segment*>(autreSegment.clone());
 }
 
+void Segment::ajouterJournee(Journee& j)
+{
+    ReservationComposite::ajouterReservation(&j);
+}
+
 void Segment::accept(VisiteurImprimeur& visiteur) {
     visiteur.visit(*this);
 }
@@ -27,7 +32,7 @@ AbstractReservation* Segment::clone() const
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Journee* r = dynamic_cast<Journee*>(currRes);
-        nouveauSeg->ajouterReservation(new Journee(*r));
+        nouveauSeg->ReservationComposite::ajouterReservation(new Journee(*r));
     }
     return nouveauSeg;
 }

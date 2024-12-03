@@ -6,6 +6,11 @@ Voyage::~Voyage()
     _reservations.shrink_to_fit();
 }
 
+void Voyage::ajouterSegment(Segment& s)
+{
+    ajouterReservation(&s);
+}
+
 Voyage::Voyage(std::string nom) : ReservationComposite() {
     _nom = nom;
 }
@@ -20,7 +25,7 @@ AbstractReservation* Voyage::clone() const {
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Segment* r = dynamic_cast<Segment*>(currRes);
-        nouveauVoyage->ajouterReservation(new Segment(*r));
+        nouveauVoyage->ReservationComposite::ajouterReservation(new Segment(*r));
     }
     return nouveauVoyage;
 }

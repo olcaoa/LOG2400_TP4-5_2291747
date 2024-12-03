@@ -39,6 +39,11 @@ std::string Journee::getDate() const {
     return oss.str();
 }
 
+void Journee::ajouterReservation(Reservation& r)
+{
+    ReservationComposite::ajouterReservation(&r);
+}
+
 void Journee::accept(VisiteurImprimeur& visiteur) {
     visiteur.visit(*this);
 }
@@ -48,7 +53,7 @@ AbstractReservation* Journee::clone() const {
     for (AbstractReservation* r : this->_reservations) {
         AbstractReservation* currRes = r;
         Reservation* r = dynamic_cast<Reservation*>(currRes);
-        nouveauJour->ajouterReservation(new Reservation(*r));
+        nouveauJour->ReservationComposite::ajouterReservation(new Reservation(*r));
     }
     return nouveauJour;
 }

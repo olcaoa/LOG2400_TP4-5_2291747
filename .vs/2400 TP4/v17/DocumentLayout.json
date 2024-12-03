@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Voyage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Voyage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Journee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Journee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Segment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Segment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\ReservationComposite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:ReservationComposite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:AbstractReservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,8 +47,8 @@
       "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:BDOR.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:AbstractReservation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4034C3C-7DF0-4066-8068-650FD69F5B9C}|2400 TP4.vcxproj|solutionrelative:LecteurFichier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,73 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LecteurFichier.h",
-              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h",
-              "RelativeDocumentMoniker": "LecteurFichier.h",
-              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h",
-              "RelativeToolTip": "LecteurFichier.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T21:39:44.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Journee.h",
-              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.h",
-              "RelativeDocumentMoniker": "Journee.h",
-              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.h",
-              "RelativeToolTip": "Journee.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T21:38:44.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BDORProxy.h",
-              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
-              "RelativeDocumentMoniker": "BDORProxy.h",
-              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
-              "RelativeToolTip": "BDORProxy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T21:38:14.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BDOR.h",
-              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h",
-              "RelativeDocumentMoniker": "BDOR.h",
-              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h",
-              "RelativeToolTip": "BDOR.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T21:37:28.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AbstractReservation.h",
-              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h",
-              "RelativeDocumentMoniker": "AbstractReservation.h",
-              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h",
-              "RelativeToolTip": "AbstractReservation.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T21:37:15.662Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -136,6 +99,162 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Voyage.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.h",
+              "RelativeDocumentMoniker": "Voyage.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.h",
+              "RelativeToolTip": "Voyage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:16.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Segment.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.cpp",
+              "RelativeDocumentMoniker": "Segment.cpp",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.cpp",
+              "RelativeToolTip": "Segment.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:23:11.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Segment.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.h",
+              "RelativeDocumentMoniker": "Segment.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Segment.h",
+              "RelativeToolTip": "Segment.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:22:43.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Journee.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.cpp",
+              "RelativeDocumentMoniker": "Journee.cpp",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.cpp",
+              "RelativeToolTip": "Journee.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:20:17.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReservationComposite.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\ReservationComposite.h",
+              "RelativeDocumentMoniker": "ReservationComposite.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\ReservationComposite.h",
+              "RelativeToolTip": "ReservationComposite.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:19:30.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AbstractReservation.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h",
+              "RelativeDocumentMoniker": "AbstractReservation.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\AbstractReservation.h",
+              "RelativeToolTip": "AbstractReservation.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T21:37:15.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Voyage.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.cpp",
+              "RelativeDocumentMoniker": "Voyage.cpp",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Voyage.cpp",
+              "RelativeToolTip": "Voyage.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:24:32.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Journee.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.h",
+              "RelativeDocumentMoniker": "Journee.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Journee.h",
+              "RelativeToolTip": "Journee.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T21:38:44.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:18:13.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LecteurFichier.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h",
+              "RelativeDocumentMoniker": "LecteurFichier.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\LecteurFichier.h",
+              "RelativeToolTip": "LecteurFichier.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T21:39:44.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BDORProxy.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
+              "RelativeDocumentMoniker": "BDORProxy.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDORProxy.h",
+              "RelativeToolTip": "BDORProxy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T21:38:14.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BDOR.h",
+              "DocumentMoniker": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h",
+              "RelativeDocumentMoniker": "BDOR.h",
+              "ToolTip": "C:\\Users\\alons\\Documents\\POLYTECHNIQUE\\TRAVAIL EQUIPE\\2400\\LOG2400_TP4-5_2291747\\BDOR.h",
+              "RelativeToolTip": "BDOR.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T21:37:28.387Z",
+              "EditorCaption": ""
             }
           ]
         },

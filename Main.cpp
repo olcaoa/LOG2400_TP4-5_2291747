@@ -10,16 +10,17 @@ int main() {
 	Reservation firstReserv = db["Hebergement"][0];
 	Reservation secReserv(firstReserv);
 	Journee firstDay;
-	firstDay.ajouterReservation(&firstReserv);
-	firstDay.ajouterReservation(&secReserv);
+	firstDay.ajouterReservation(firstReserv);
+	firstDay.ajouterReservation(secReserv);
 	Journee secDay(firstDay);
 	Segment firstSeg("firstSeg");
 	Segment secSeg(firstSeg);
-	firstSeg.ajouterReservation(&firstDay);
-	firstSeg.ajouterReservation(&firstDay);
+	firstSeg.ajouterJournee(firstDay);
+	firstSeg.ajouterJournee(firstDay);
 	Voyage firstVoyage("firstV");
-	firstVoyage.ajouterReservation(&firstSeg);
+	firstVoyage.ajouterSegment(firstSeg);
 	Voyage secVoyage(firstVoyage);
+	Reservation secondReserv = db["Vols"][0];
 
 	cout << secVoyage;
 

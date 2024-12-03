@@ -6,6 +6,7 @@
 class Voyage : public ReservationComposite
 {
 public:
+    void ajouterSegment(Segment& s);
     Voyage(std::string nom);
     Voyage(const Voyage& autreVoyage);
     ~Voyage();
