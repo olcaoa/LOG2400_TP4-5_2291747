@@ -23,4 +23,6 @@ public:
 	const virtual double& getPrix();
 	friend std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv);
 	friend class ImprimeurReservation;
+	friend class ImprimeurLoggeur;
+	friend class ReservationLoggeur;
 };

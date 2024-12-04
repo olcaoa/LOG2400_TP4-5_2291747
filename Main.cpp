@@ -2,6 +2,7 @@
 #include "Voyage.h"
 #include "LecteurFichier.h"
 #include "BDORProxy.h"
+#include "ReservationLoggeur.h"
 
 using namespace std;
 
@@ -21,8 +22,10 @@ int main() {
 	firstVoyage.ajouterSegment(firstSeg);
 	Voyage secVoyage(firstVoyage);
 	Reservation secondReserv = db["Vols"][0];
+	ReservationLoggeur doaTxt(secondReserv);
+	ReservationLoggeur voyageurLog(secVoyage);
 
-	cout << secondReserv;
+	cout << voyageurLog;
 
 	return 0;
 }

@@ -9,5 +9,6 @@ class ImprimeurLoggeur :public VisiteurImprimeur
     void visit(Segment& segment) override;
     void visit(Voyage& voyage) override;
     ~ImprimeurLoggeur() = default;
+    friend class ReservationLoggeur;
 };
 

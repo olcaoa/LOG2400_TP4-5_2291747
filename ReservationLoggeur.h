@@ -3,9 +3,11 @@
 #include "ImprimeurLoggeur.h"
 class ReservationLoggeur : public AbstractReservationDecoree
 {
-	ReservationLoggeur(Reservation& r);
+public:
+	ReservationLoggeur(AbstractReservation& r);
 	const std::string& getNom();
 	void accept(VisiteurImprimeur& visiteur);
 	virtual void decorer();
+	virtual AbstractReservation* clone() const override;
 };
 

@@ -1,5 +1,5 @@
 #include "ImprimeurLoggeur.h"
-#include "Reservation.h"
+#include "Voyage.h"
 
 void ImprimeurLoggeur::visit(Reservation& reservation)
 {
@@ -20,4 +20,9 @@ void ImprimeurLoggeur::visit(Segment& segment)
 
 void ImprimeurLoggeur::visit(Voyage& voyage)
 {
+	using namespace std;
+	ofstream fichierTexteOut(voyage.getNom() + ".txt");
+	fichierTexteOut << "Log test creation de Voyage: "
+		<< voyage.getNom() << " " << "prix: " << voyage.getPrix()
+		<< endl;
 }
