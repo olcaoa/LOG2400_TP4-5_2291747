@@ -13,9 +13,34 @@ Reservation::Reservation(std::string nom, std::string description, double prix) 
 
 AbstractReservation* Reservation::clone() const
 {
-    return new Reservation(this->_nom, this->_description, this->_prix);
+    return new Reservation(this->_nom + " copie", this->_description, this->_prix);
+}
+
+Reservation& Reservation::getReservation(std::string nom)
+{
+    return *dynamic_cast<Reservation*>(ReservationComposite::getReservation(nom));
+}
+
+void Reservation::ajouterReservation(Reservation* r)
+{
+    ReservationComposite::ajouterReservation(r);
+}
+
+void Reservation::enleverReservation(Reservation* r)
+{
+    ReservationComposite::enleverReservation(r);
+}
+
+
+bool Reservation::comparerReservations(Reservation compare)
+{
+    return this->getNom() == compare.getNom();
 }
 
 void Reservation::accept(VisiteurImprimeur& visiteur) {
     visiteur.visit(*this);
+}
+
+Reservation::Reservation()
+{
 }

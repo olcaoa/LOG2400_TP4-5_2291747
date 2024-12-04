@@ -1,4 +1,5 @@
 #include "ImprimeurLoggeur.h"
+#include "BDOR.h"
 #include "Voyage.h"
 
 void ImprimeurLoggeur::visit(Reservation& reservation)
@@ -31,4 +32,10 @@ void ImprimeurLoggeur::visit(Voyage& voyage)
 	lecture << "Log test creation de Voyage: "
 		<< voyage.getNom() << " " << "prix: " << voyage.getPrix()
 		<< endl;
+}
+
+void ImprimeurLoggeur::visit(BDOR& db)
+{
+	using namespace std;
+	lecture << "Prix changes de" << db.dernierFacteurAjustement;
 }

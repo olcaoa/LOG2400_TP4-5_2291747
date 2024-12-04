@@ -1,6 +1,6 @@
 #pragma once
 #include "Reservation.h"
-class AbstractReservationDecoree : public AbstractReservation
+class AbstractReservationDecoree : virtual public AbstractReservation
 {
 protected:
 	AbstractReservation* _reservation;

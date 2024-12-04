@@ -20,9 +20,12 @@ public:
 	~AbstractReservation() = default;
 	AbstractReservation& getReservation();
 	const virtual std::string& getNom();
-	const virtual double& getPrix();
+	const virtual double getPrix();
+	virtual void setPrix(double prix);
+	const virtual void setDescription(std::string desc);
 	friend std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv);
 	friend class ImprimeurReservation;
 	friend class ImprimeurLoggeur;
 	friend class ReservationLoggeur;
+	friend class ReservationRabais;
 };

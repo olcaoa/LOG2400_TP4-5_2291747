@@ -13,7 +13,7 @@ double ReservationComposite::calculerPrix()
 	return total;
 }
 
-const double& ReservationComposite::getPrix()
+const double ReservationComposite::getPrix()
 {
 	return calculerPrix();
 }

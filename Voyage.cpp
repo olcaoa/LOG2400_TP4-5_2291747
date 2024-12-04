@@ -6,7 +6,7 @@ Voyage::~Voyage()
     _reservations.shrink_to_fit();
 }
 
-Segment Voyage::getSegment(std::string nom)
+Segment& Voyage::getSegment(std::string nom)
 {
     return *dynamic_cast<Segment*>(getReservation(nom));
 }
@@ -18,6 +18,7 @@ void Voyage::ajouterSegment(Segment& s)
 
 void Voyage::enleverSegment(Segment& s)
 {
+    std::cout << "Segment Portugal efface !" << std::endl;
     ReservationComposite::enleverReservation(&s);
 }
 
@@ -25,9 +26,12 @@ Voyage::Voyage(std::string nom) : ReservationComposite() {
     _nom = nom;
 }
 
-Voyage::Voyage(const Voyage& autreVoyage)
+
+Voyage::Voyage(const Voyage& autreVoyage, std::string nom)
 {
     *this = *dynamic_cast<Voyage*>(autreVoyage.clone());
+    _nom = nom;
+    std::cout << _nom << " copie a partir de " << autreVoyage._nom << "\n" << std::endl;
 }
 
 AbstractReservation* Voyage::clone() const {

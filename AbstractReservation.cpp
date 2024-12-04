@@ -18,9 +18,19 @@ const string& AbstractReservation::getNom() {
 	return this->_nom;
 }
 
-const double& AbstractReservation::getPrix()
+const double AbstractReservation::getPrix()
 {
 	return this->_prix;
+}
+
+void AbstractReservation::setPrix(double prix)
+{
+	_prix = prix;
+}
+
+const void AbstractReservation::setDescription(std::string desc)
+{
+	this->_description = desc;
 }
 
 std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv)

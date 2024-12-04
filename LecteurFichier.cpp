@@ -45,8 +45,11 @@ LecteurFichier::LecteurFichier() {
 	map<string, vector<string>> hebergement = lireCSV(chemin + "Hebergement.csv");
 	map<string, vector<string>> excursion = lireCSV(chemin + "Excursions.csv");
 	_donneesParCategorie[_cles[0]] = vols;
+	cout << "Categorie Transport creee!" << endl;
 	_donneesParCategorie[_cles[1]] = hebergement;
+	cout << "Categorie Hebergement creee!" << endl;
 	_donneesParCategorie[_cles[2]] = excursion;
+	cout << "Categorie Excursion creee!" << endl;
 }
 
 LecteurFichier::~LecteurFichier()

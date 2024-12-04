@@ -2,7 +2,7 @@
 #include "AbstractReservation.h"
 #include "ImprimeurReservation.h"
 
-class ReservationComposite : public AbstractReservation
+class ReservationComposite : virtual public AbstractReservation
 {
 protected:
 	AbstractReservation* getReservation(std::string nom);
@@ -14,7 +14,7 @@ protected:
 public:
 	~ReservationComposite() = default;
 	ReservationComposite();
-	const virtual double& getPrix() override;
+	const double getPrix() override;
 	void accept(VisiteurImprimeur& visiteur) override;
 	friend class ImprimeurReservation;
 };

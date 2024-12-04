@@ -4,18 +4,27 @@
 #include <map>
 #include <vector>
 #include <string>
+#include "ReservationRabais.h"
 
 class BDOR : public AbstractBDOR {
 private:
+    double dernierFacteurAjustement = 1;
+    int nombreOffres = 0;
+    void accept(ImprimeurLoggeur& log);
     std::map<std::string, std::vector<Reservation>> reservations;
 	double convertirPrix(const std::string& devise, double prix);
 protected:
     void liberer();
     LecteurFichier* _lecteur;
     BDOR();
+    
 public:
     ~BDOR();
-    static BDOR& getInstance();
-    virtual std::vector<Reservation>& acceder(std::string) override;
+    std::vector<Reservation>& acceder(std::string) override;
     void importerReservations(LecteurFichier* lecteur);
+    int getNombreOffres() const override;
+    static BDOR& getInstance();
+    void ajusterPrix(double facteur);
+    void ajouterRabais(Reservation& r, std::string categorie, double rabais);
+    friend class ImprimeurLoggeur;
 };

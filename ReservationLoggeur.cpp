@@ -1,6 +1,11 @@
 #include "ReservationLoggeur.h"
 #include <filesystem>
 
+ReservationLoggeur& ReservationLoggeur::getReservation(std::string nom)
+{
+    return *dynamic_cast<ReservationLoggeur*>(ReservationComposite::getReservation(nom));
+}
+
 ReservationLoggeur::ReservationLoggeur(AbstractReservation& r){
     _reservation = &r;
     decorer();
@@ -29,8 +34,9 @@ void ReservationLoggeur::decorer()
     ImprimeurLoggeur log;
     _reservation->accept(log);
 
-    ofstream fichier(nomFichier);
+    fstream fichier(nomFichier);
     fichier << log.lecture.str();
+    fichier.close();
 }
 
 AbstractReservation* ReservationLoggeur::clone() const
