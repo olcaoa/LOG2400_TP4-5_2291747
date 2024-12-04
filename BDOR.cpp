@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include <filesystem>
 
-void BDOR::accept(ImprimeurLoggeur& log)
+void BDOR::accept(ImprimeurReservation& log)
 {
     using namespace std;
     using namespace std::filesystem;
@@ -13,7 +13,8 @@ void BDOR::accept(ImprimeurLoggeur& log)
         create_directory(dir);
     }
     path nomFichier = chemin / ("AjustementPrix.txt");
-    fstream fichier(nomFichier);
+    ofstream fichier(nomFichier, ios::app);
+    log.visit(*this);
     fichier << log.lecture.str();
 }
 
@@ -31,7 +32,7 @@ void BDOR::ajusterPrix(double facteur)
         }
     }
     dernierFacteurAjustement = facteur;
-    ImprimeurLoggeur log;
+    ImprimeurReservation log;
     accept(log);
 
 }

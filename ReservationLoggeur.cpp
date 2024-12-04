@@ -31,10 +31,10 @@ void ReservationLoggeur::decorer()
         create_directory(dir);
     }
     path nomFichier = chemin / (getNom() + ".txt");
-    ImprimeurLoggeur log;
+    ImprimeurReservation log;
     _reservation->accept(log);
 
-    fstream fichier(nomFichier);
+    ofstream fichier(nomFichier,ios::app);
     fichier << log.lecture.str();
     fichier.close();
 }

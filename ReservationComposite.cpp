@@ -5,17 +5,16 @@ ReservationComposite::ReservationComposite() : AbstractReservation() {}
 
 double ReservationComposite::calculerPrix()
 {
-
-	double total = 0;
 	for (auto reservation : _reservations) {
-		total += reservation->getPrix();
+		_prix += reservation->getPrix();
 	}
-	return total;
+	return _prix;
 }
 
 const double ReservationComposite::getPrix()
 {
-	return calculerPrix();
+	calculerPrix();
+	return _prix;
 }
 
 AbstractReservation* ReservationComposite::getReservation(std::string nom)

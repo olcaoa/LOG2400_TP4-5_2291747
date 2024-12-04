@@ -63,6 +63,12 @@
     <ClCompile Include="ReservationLoggeur.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ReservationCommentee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReservationRabais.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="LOG2400-A2024-TP4-Enonce.pdf">
@@ -122,6 +128,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ReservationLoggeur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReservationCommentee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReservationRabais.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

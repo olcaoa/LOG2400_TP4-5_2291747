@@ -3,15 +3,16 @@
 class ReservationCommentee : public Reservation, public AbstractReservationDecoree
 {
 protected:
-	virtual void decorer() = 0;
+	virtual void decorer() override;
 	std::vector<std::string> commentaires;
 public:
+	ReservationCommentee(Reservation& r);
 	ReservationCommentee& getReservation(std::string nom);
-	const std::string& getNom() override = 0;
-	void accept(VisiteurImprimeur& visiteur) override = 0;
-	virtual AbstractReservation* clone() const override = 0;
-	void ajouterCommentaire(std::string& comm);
-	void enleverCommentaire(std::string& comm);
-	std::vector<std::string> trouverCommentatires(std::string& comm);
+	const std::string& getNom() override;
+	void accept(VisiteurImprimeur& visiteur) override;
+	virtual AbstractReservation* clone() const override;
+	void ajouterCommentaire(std::string comm);
+	void enleverCommentaire(std::string comm);
+	std::vector<std::string> trouverCommentatires(std::string comm);
 };
 

@@ -28,4 +28,5 @@ public:
 	friend class ImprimeurLoggeur;
 	friend class ReservationLoggeur;
 	friend class ReservationRabais;
+	friend class ReservationCommentee;
 };

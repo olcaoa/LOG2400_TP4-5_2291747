@@ -10,7 +10,7 @@ class BDOR : public AbstractBDOR {
 private:
     double dernierFacteurAjustement = 1;
     int nombreOffres = 0;
-    void accept(ImprimeurLoggeur& log);
+    void accept(ImprimeurReservation& log);
     std::map<std::string, std::vector<Reservation>> reservations;
 	double convertirPrix(const std::string& devise, double prix);
 protected:
@@ -19,12 +19,12 @@ protected:
     BDOR();
     
 public:
+    void ajusterPrix(double facteur) override;
+    void ajouterRabais(Reservation& r, std::string categorie, double rabais) override;
     ~BDOR();
     std::vector<Reservation>& acceder(std::string) override;
     void importerReservations(LecteurFichier* lecteur);
     int getNombreOffres() const override;
     static BDOR& getInstance();
-    void ajusterPrix(double facteur);
-    void ajouterRabais(Reservation& r, std::string categorie, double rabais);
-    friend class ImprimeurLoggeur;
+    friend class ImprimeurReservation;
 };

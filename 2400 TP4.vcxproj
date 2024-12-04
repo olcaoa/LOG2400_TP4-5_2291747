@@ -128,6 +128,7 @@
     <ClCompile Include="BDORProxy.cpp" />
     <ClCompile Include="ImprimeurLoggeur.cpp" />
     <ClCompile Include="LecteurFichier.cpp" />
+    <ClCompile Include="ReservationCommentee.cpp" />
     <ClCompile Include="ReservationComposite.cpp" />
     <ClCompile Include="Journee.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="ImprimeurReservation.cpp" />
     <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="ReservationLoggeur.cpp" />
+    <ClCompile Include="ReservationRabais.cpp" />
     <ClCompile Include="Segment.cpp" />
     <ClCompile Include="Voyage.cpp" />
   </ItemGroup>
@@ -152,11 +154,13 @@
     <ClInclude Include="BDORProxy.h" />
     <ClInclude Include="ImprimeurLoggeur.h" />
     <ClInclude Include="LecteurFichier.h" />
+    <ClInclude Include="ReservationCommentee.h" />
     <ClInclude Include="ReservationComposite.h" />
     <ClInclude Include="Journee.h" />
     <ClInclude Include="ImprimeurReservation.h" />
     <ClInclude Include="Reservation.h" />
     <ClInclude Include="ReservationLoggeur.h" />
+    <ClInclude Include="ReservationRabais.h" />
     <ClInclude Include="Segment.h" />
     <ClInclude Include="VisiteurImprimeur.h" />
     <ClInclude Include="Voyage.h" />

@@ -5,7 +5,7 @@
 #include "Voyage.h"
 #include <iostream>
 #include <format>
-
+#include "BDOR.h"
 
 void ImprimeurReservation::visit(Reservation& reservation) {
     lecture << "        Reservation:   " << reservation.getNom();
@@ -34,4 +34,9 @@ void ImprimeurReservation::visit(Voyage& voyage) {
     for (auto* segment : voyage.obtenirReservations()) {
         segment->accept(*this);
     }
+}
+
+void ImprimeurReservation::visit(BDOR& db)
+{
+    lecture << "Dernier changement de prix par facteur de: " << db.dernierFacteurAjustement;
 }

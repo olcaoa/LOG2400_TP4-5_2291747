@@ -33,9 +33,3 @@ void ImprimeurLoggeur::visit(Voyage& voyage)
 		<< voyage.getNom() << " " << "prix: " << voyage.getPrix()
 		<< endl;
 }
-
-void ImprimeurLoggeur::visit(BDOR& db)
-{
-	using namespace std;
-	lecture << "Prix changes de" << db.dernierFacteurAjustement;
-}
