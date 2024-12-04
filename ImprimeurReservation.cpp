@@ -6,16 +6,17 @@
 #include <iostream>
 #include <format>
 
+
 void ImprimeurReservation::visit(Reservation& reservation) {
-    std::cout << "   Reservation:\n    Nom: " << reservation.getNom();
+    lecture << "   Reservation:\n    Nom: " << reservation.getNom();
     if (!reservation._description.empty()) {
-        std::cout << "\n    Description: " << reservation._description;
+        lecture << "\n    Description: " << reservation._description;
     }
-    std::cout << "\n    Prix: " << reservation.getPrix() << "$\n";
+    lecture << "\n    Prix: " << reservation.getPrix() << "$\n";
 }
 
 void ImprimeurReservation::visit(Journee& journee) {
-    std::cout << std::format("  Journee {} ", journee.getNom()) << 
+    lecture << std::format("  Journee {} ", journee.getNom()) << 
         "[Date: " << journee.getMois() << "/" << journee.getJour() << "/" << journee.getAnnee() << "]:\n";
     for (auto* reservation : journee.obtenirReservations()) {
         reservation->accept(*this);
@@ -23,14 +24,14 @@ void ImprimeurReservation::visit(Journee& journee) {
 }
 
 void ImprimeurReservation::visit(Segment& segment) {
-    std::cout << std::format(" Segment {} contenant les journees suivantes:\n", segment.getNom());
+    lecture << std::format(" Segment {} contenant les journees suivantes:\n", segment.getNom());
     for (auto* journee : segment.obtenirReservations()) {
         journee->accept(*this);
     }
 }
 
 void ImprimeurReservation::visit(Voyage& voyage) {
-    std::cout << std::format("Voyage {} contenant les segments suivants:\n", voyage.getNom());
+    lecture << std::format("Voyage {} contenant les segments suivants:\n", voyage.getNom());
     for (auto* segment : voyage.obtenirReservations()) {
         segment->accept(*this);
     }

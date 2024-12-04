@@ -1,0 +1,16 @@
+Voyage firstV contenant les segments suivants:
+ Segment firstSeg contenant les journees suivantes:
+  Journee Journee 1/1/2000 [Date: 1/1/2000]:
+   Reservation:
+    Nom: Hotel Stella
+    Prix: 403$
+   Reservation:
+    Nom: Hotel Stella
+    Prix: 403$
+  Journee Journee 1/1/2000 [Date: 1/1/2000]:
+   Reservation:
+    Nom: Hotel Stella
+    Prix: 403$
+   Reservation:
+    Nom: Hotel Stella
+    Prix: 403$

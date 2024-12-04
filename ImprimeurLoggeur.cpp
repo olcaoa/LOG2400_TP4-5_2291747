@@ -4,25 +4,31 @@
 void ImprimeurLoggeur::visit(Reservation& reservation)
 {
 	using namespace std;
-	ofstream fichierTexteOut("Log.txt");
-	fichierTexteOut << "Log test creation de Reservation: "
+	lecture << "Log test creation de Reservation: "
 		<< reservation.getNom() << " " << "prix: " << reservation.getPrix()
 		<< endl;
 }
 
 void ImprimeurLoggeur::visit(Journee& journee)
 {
+	using namespace std;
+	lecture << "Log test creation de Voyage: "
+		<< journee.getNom() << " " << "prix: " << journee.getPrix()
+		<< endl;
 }
 
 void ImprimeurLoggeur::visit(Segment& segment)
 {
+	using namespace std;
+	lecture << "Log test creation de Voyage: "
+		<< segment.getNom() << " " << "prix: " << segment.getPrix()
+		<< endl;
 }
 
 void ImprimeurLoggeur::visit(Voyage& voyage)
 {
 	using namespace std;
-	ofstream fichierTexteOut(voyage.getNom() + ".txt");
-	fichierTexteOut << "Log test creation de Voyage: "
+	lecture << "Log test creation de Voyage: "
 		<< voyage.getNom() << " " << "prix: " << voyage.getPrix()
 		<< endl;
 }

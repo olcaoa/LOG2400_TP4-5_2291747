@@ -25,8 +25,7 @@ const double& AbstractReservation::getPrix()
 
 std::ostream& operator<<(std::ostream& stream, AbstractReservation& reserv)
 {
-	std::cout << "------" << endl;
 	reserv.accept(*reserv._visite);
-	stream << "------" << endl;
+	stream << dynamic_cast<ImprimeurReservation*>(reserv._visite)->lecture.str();
 	return stream;
 }
