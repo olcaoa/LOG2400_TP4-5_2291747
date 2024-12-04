@@ -1,6 +1,11 @@
 #include "Journee.h"
 #include <sstream>
 
+Reservation Journee::getReservation(std::string nom)
+{
+    return *dynamic_cast<Reservation*>(ReservationComposite::getReservation(nom));
+}
+
 Journee::Journee() : _mois(1), _jour(1), _annee(2000) {}
 
 Journee::Journee(const Journee& other)

@@ -6,6 +6,7 @@
 class Segment : public ReservationComposite
 {
 public:
+    Journee getJournee(std::string nom);
     Segment(std::string nom);
     ~Segment();
     Segment(const Segment& autreSegment);

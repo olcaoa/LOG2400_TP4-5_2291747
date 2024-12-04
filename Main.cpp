@@ -25,7 +25,8 @@ int main() {
 	ReservationLoggeur doaTxt(secondReserv);
 	ReservationLoggeur voyageurLog(secVoyage);
 
-	cout << voyageurLog;
+	Segment firstSegCopy = secVoyage.getSegment("firstSeg");
+	cout << firstSegCopy;
 
 	return 0;
 }

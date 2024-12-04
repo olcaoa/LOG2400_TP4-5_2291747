@@ -6,9 +6,19 @@ Voyage::~Voyage()
     _reservations.shrink_to_fit();
 }
 
+Segment Voyage::getSegment(std::string nom)
+{
+    return *dynamic_cast<Segment*>(getReservation(nom));
+}
+
 void Voyage::ajouterSegment(Segment& s)
 {
     ajouterReservation(&s);
+}
+
+void Voyage::enleverSegment(Segment& s)
+{
+    ReservationComposite::enleverReservation(&s);
 }
 
 Voyage::Voyage(std::string nom) : ReservationComposite() {

@@ -18,6 +18,14 @@ const double& ReservationComposite::getPrix()
 	return calculerPrix();
 }
 
+AbstractReservation* ReservationComposite::getReservation(std::string nom)
+{
+	auto position = find_if(_reservations.begin(), _reservations.end(), [nom](AbstractReservation* r) {
+		return r->getNom() == nom;
+		});
+	return *position;
+}
+
 void ReservationComposite::ajouterReservation(AbstractReservation* r)
 {
 	_reservations.push_back(r);

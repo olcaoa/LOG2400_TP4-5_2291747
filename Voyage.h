@@ -6,7 +6,9 @@
 class Voyage : public ReservationComposite
 {
 public:
+    Segment getSegment(std::string nom);
     void ajouterSegment(Segment& s);
+    void enleverSegment(Segment& s);
     Voyage(std::string nom);
     Voyage(const Voyage& autreVoyage);
     ~Voyage();

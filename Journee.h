@@ -13,6 +13,7 @@ private:
     AbstractReservation* clone() const override;
 
 public:
+    Reservation getReservation(std::string nom);
 	Journee();
     Journee(const Journee& other);
     Journee(int mois, int jour, int annee);

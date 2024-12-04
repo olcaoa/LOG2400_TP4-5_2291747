@@ -2,6 +2,11 @@
 #include <sstream>
 
 
+Journee Segment::getJournee(std::string nom)
+{
+    return *dynamic_cast<Journee*>(getReservation(nom));
+}
+
 Segment::Segment(std::string nom) : ReservationComposite() {
     _nom = nom;
 }

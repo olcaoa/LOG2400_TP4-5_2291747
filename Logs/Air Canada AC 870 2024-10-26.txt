@@ -1,4 +1,1 @@
-   Reservation:
-    Nom: Air Canada AC 870 2024-10-26
-    Description: 2024-10-26
-    Prix: 1127$
+Log test creation de Reservation: Air Canada AC 870 2024-10-26 prix: 1127
